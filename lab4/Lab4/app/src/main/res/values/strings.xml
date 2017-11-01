@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="symbol">*</string>
+    <string name="shopping">购物车</string>
+    <string name="price">价格</string>
+    <string name="moreMessage">更多产品信息</string>
+</resources>

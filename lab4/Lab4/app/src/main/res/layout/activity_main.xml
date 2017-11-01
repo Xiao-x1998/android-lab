@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fab="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/framelayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linler_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/symbol"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:background="@drawable/shadow"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="20sp"/>
+
+            <TextView
+                android:text="@string/shopping"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10sp"/>
+
+            <TextView
+                android:text="@string/price"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/recycler_view"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fabSize="mini"
+        fab:fab_icon="@drawable/shoplist"
+        fab:fab_colorNormal="@color/White"
+        fab:fab_colorPressed="@color/White"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|end"/>
+</FrameLayout>
