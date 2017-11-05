@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_FirstLetter"
+        android:textColor="@color/White"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@drawable/shadow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_weight="1"
+        android:textColor="@color/Black"/>
+
+    <TextView
+        android:id="@+id/tv_Price"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/Black"/>
+
+
+</LinearLayout>
